@@ -2,21 +2,7 @@
 /* benjavicente */
 
 /* https://www.jsdelivr.com/?docs=gh */
-@font-face{
-    font-family: 'JetBrainsMono';
-    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff')  format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'JetBrainsMono';
-    src:    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff2') format('woff2'),
-            url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff')  format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
+@import url(https://cdn.jsdelivr.net/npm/firacode@5.2.0/distr/fira_code.css);
 
 
 /* ╒══════════════╕ */
@@ -111,8 +97,12 @@ html[theme=light] {
 
 /* Font */
 .code, .monaco-editor .view-lines, .inputarea, .monaco-tokenized-source {
-    font-family: JetBrainsMono, monospace !important;
+    font-family: 'Fira Code', monospace !important;
     font-weight: var(--font-weight) !important;
+}
+
+@supports (font-variation-settings: normal) {
+  .code, .monaco-editor .view-lines, .inputarea, .monaco-tokenized-source { font-family: 'Fira Code VF', monospace !important; }
 }
 
 /* Focus */
