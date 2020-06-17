@@ -1,7 +1,7 @@
 # Google Colab Theme+
 
 A simple style that increases the contrast of the default dark and
-light theme and changes the monospace font to [JetBrainsMono][JBM].
+light theme and changes the monospace font to Fira Code with ligatures.
 
 The theme can be installed by importing [`style.json`][json] to a
 style manager like [Stylus] or by coping [`themeplus.css`][css] to
